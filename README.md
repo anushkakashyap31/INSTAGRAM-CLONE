@@ -138,7 +138,9 @@ INSTAGRAM_MINI_CLONE/
   │   └── package.json
   │
   ├── postman/
-  │   └── InstaClone.postman_collection.json
+  |   ├── postman/
+  |       ├── collection/
+  │           └── InstaClone API.postman_collection.json
   │
   └── README.md
 ```
@@ -279,7 +281,7 @@ Authorization: Bearer <token>
 Location:
 
 ```text
-postman/InstaClone.postman_collection.json
+postman/postman/collection/InstaClone API.postman_collection.json
 ```
 
 Steps:
