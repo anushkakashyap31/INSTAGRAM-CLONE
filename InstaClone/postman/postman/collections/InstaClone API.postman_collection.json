@@ -1,0 +1,629 @@
+{
+  "info": {
+    "_postman_id": "a0af2157-2b3d-463a-bff4-f0f321070666",
+    "name": "InstaClone API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "id": "52ade499-8d75-4d88-9ad1-7412b313c861",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/comments/693eda09883dba26a683d078",
+      "id": "df9decff-509d-491e-b498-7afd4500c2c4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkODE3ODgzZGJhMjZhNjgzZDA1ZSIsImlhdCI6MTc2NTcyNjI3NCwiZXhwIjoxNzY2MzMxMDc0fQ.sZlWP5LnYf39_maQTYYT43SGv45Wz0_26CoGnaCXRd4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"text\": \"Nice post! 🔥\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/comments/693eda09883dba26a683d078",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "comments",
+            "693eda09883dba26a683d078"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/auth/signup",
+      "id": "a86a33e7-5d01-41b9-9026-6ae4936f16e9",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Anushka Kashyap\",\r\n  \"username\": \"anushka01\",\r\n  \"email\": \"anushka@example.com\",\r\n  \"password\": \"Password@123\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/auth/login",
+      "id": "4a92b407-bbf3-47e3-a17a-c79252954822",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"anushka@example.com\",\r\n  \"password\": \"Password@123\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/auth/signup",
+      "id": "8f5ebda3-951b-4a3f-b53c-036225383854",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Aanchal Kashyap\",\r\n  \"username\": \"aanchal01\",\r\n  \"email\": \"aanchal@example.com\",\r\n  \"password\": \"Password@123\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/auth/login",
+      "id": "db682cd5-1963-4525-8e81-b055506d7640",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"aanchal@example.com\",\r\n  \"password\": \"Password@123\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/users/profile/693ed77b883dba26a683d05a",
+      "id": "5268851b-a1ab-4b02-a136-c6d26354c620",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjA3NywiZXhwIjoxNzY2MzMwODc3fQ.0OnNBgtInNy-PZzUkXfWJuCsohfIH83l020UCm3bgx8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/users/profile/693ed77b883dba26a683d05a",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "users",
+            "profile",
+            "693ed77b883dba26a683d05a"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/users/list",
+      "id": "4e9800ba-7b37-4320-a1c4-26434df7512d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjA3NywiZXhwIjoxNzY2MzMwODc3fQ.0OnNBgtInNy-PZzUkXfWJuCsohfIH83l020UCm3bgx8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/users/list",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "users",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/users/follow/693ed817883dba26a683d05e",
+      "id": "e70a4eca-c5cb-40d6-b49f-5017c54903ef",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjA3NywiZXhwIjoxNzY2MzMwODc3fQ.0OnNBgtInNy-PZzUkXfWJuCsohfIH83l020UCm3bgx8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/users/follow/693ed817883dba26a683d05e",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "users",
+            "follow",
+            "693ed817883dba26a683d05e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/users/unfollow/693ed817883dba26a683d05e",
+      "id": "c2243500-5e2d-4274-98ae-ffe8adeaa87f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjA3NywiZXhwIjoxNzY2MzMwODc3fQ.0OnNBgtInNy-PZzUkXfWJuCsohfIH83l020UCm3bgx8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/users/unfollow/693ed817883dba26a683d05e",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "users",
+            "unfollow",
+            "693ed817883dba26a683d05e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/users/follow/693ed817883dba26a683d05e",
+      "id": "3d836520-94b8-49e3-a3d6-7c897d9a6210",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjA3NywiZXhwIjoxNzY2MzMwODc3fQ.0OnNBgtInNy-PZzUkXfWJuCsohfIH83l020UCm3bgx8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/users/follow/693ed817883dba26a683d05e",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "users",
+            "follow",
+            "693ed817883dba26a683d05e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/posts",
+      "id": "c761a2d9-85a0-4f83-865f-9fd25b9aede3",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjA3NywiZXhwIjoxNzY2MzMwODc3fQ.0OnNBgtInNy-PZzUkXfWJuCsohfIH83l020UCm3bgx8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"image\": \"https://picsum.photos/600\",\r\n  \"caption\": \"My first post on InstaClone!\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/posts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/posts",
+      "id": "74d46910-74d9-48c6-a11d-851b7346555c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjA3NywiZXhwIjoxNzY2MzMwODc3fQ.0OnNBgtInNy-PZzUkXfWJuCsohfIH83l020UCm3bgx8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/posts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/posts/feed",
+      "id": "d3f5b6f5-94ca-4169-a6d5-21283df12873",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjEzMiwiZXhwIjoxNzY2MzMwOTMyfQ.ocrmzG7QnYCB7cSsC_2kfUBRIzgv7kkprjd4uxp5uTo",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/posts/feed",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "posts",
+            "feed"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/posts/693eda09883dba26a683d078",
+      "id": "9a6eb04a-915a-4644-982a-4e8b91aed721",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkNzdiODgzZGJhMjZhNjgzZDA1YSIsImlhdCI6MTc2NTcyNjA3NywiZXhwIjoxNzY2MzMwODc3fQ.0OnNBgtInNy-PZzUkXfWJuCsohfIH83l020UCm3bgx8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/posts/693eda09883dba26a683d078",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "posts",
+            "693eda09883dba26a683d078"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/likes/693eda09883dba26a683d078/like",
+      "id": "fd804088-86b0-4dd4-adaa-154730a123f1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkODE3ODgzZGJhMjZhNjgzZDA1ZSIsImlhdCI6MTc2NTcyNjI3NCwiZXhwIjoxNzY2MzMxMDc0fQ.sZlWP5LnYf39_maQTYYT43SGv45Wz0_26CoGnaCXRd4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"image\": \"https://pic.photos/800\",\r\n  \"caption\": \"My first post on InstaClone!\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/likes/693eda09883dba26a683d078/like",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "likes",
+            "693eda09883dba26a683d078",
+            "like"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/users/profile/693ed77b883dba26a683d05a",
+      "id": "764c81ba-d011-46a8-af23-f6f2462d04b2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2VkODE3ODgzZGJhMjZhNjgzZDA1ZSIsImlhdCI6MTc2NTcyNjI3NCwiZXhwIjoxNzY2MzMxMDc0fQ.sZlWP5LnYf39_maQTYYT43SGv45Wz0_26CoGnaCXRd4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/users/profile/693ed77b883dba26a683d05a",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "users",
+            "profile",
+            "693ed77b883dba26a683d05a"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
